@@ -1,0 +1,102 @@
+{
+    "_id": "fdd39ba1-3674-4b7a-9bac-ff21a535b22b",
+    "colName": "Dev",
+    "created": "2023-07-01T00:58:58.845Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e9d83d56-f5a4-4713-88f3-df7fc103810c",
+            "colId": "fdd39ba1-3674-4b7a-9bac-ff21a535b22b",
+            "containerId": "",
+            "name": "getAll",
+            "url": "{{urlBase}}/user/getall",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-01T00:59:10.685Z",
+            "modified": "2023-07-15T01:20:33.742Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFnYWtsaWtAZmVtYS5jb20uYnIiLCJpYXQiOjE2ODkzODM3NzQsImV4cCI6MTY4OTQ3MDE3NCwic3ViIjoiNmMxY2Y5NzUtYTgwNi00YjNjLThmYjUtZDBhMzExZjIxNTM3In0.zckm2T_f0mDRcRjPfUHqZG5skGK7ClmTVDsCBoI6Ly4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "951651c4-2b37-450d-abfb-3f2e26785ea1",
+            "colId": "fdd39ba1-3674-4b7a-9bac-ff21a535b22b",
+            "containerId": "",
+            "name": "createUser",
+            "url": "{{urlBase}}/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-01T01:06:13.923Z",
+            "modified": "2023-07-15T01:11:51.593Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Alexandre Gaklik\",\n  \"email\":\"agaklik@fema.com.br\",\n  \"password\":\"6666\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d24c86c4-7aec-4155-9f67-89dc45e99a70",
+            "colId": "fdd39ba1-3674-4b7a-9bac-ff21a535b22b",
+            "containerId": "",
+            "name": "updateUser",
+            "url": "{{urlBase}}/user/6c1cf975-a806-4b3c-8fb5-d0a311f21537",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-07-07T23:43:45.538Z",
+            "modified": "2023-07-15T01:22:29.964Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Batatinha123\",\n  \"email\":\"batatinhaFrita@fema.com.br\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFnYWtsaWtAZmVtYS5jb20uYnIiLCJpYXQiOjE2ODkzODM3NzQsImV4cCI6MTY4OTQ3MDE3NCwic3ViIjoiNmMxY2Y5NzUtYTgwNi00YjNjLThmYjUtZDBhMzExZjIxNTM3In0.zckm2T_f0mDRcRjPfUHqZG5skGK7ClmTVDsCBoI6Ly4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b4e88410-7449-4e53-9ebb-f9912d3b9678",
+            "colId": "fdd39ba1-3674-4b7a-9bac-ff21a535b22b",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "{{urlBase}}/e50822e0-d128-49e5-91fe-1fc9c4e68821",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-07-08T00:52:23.865Z",
+            "modified": "2023-07-08T00:53:30.378Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aeb6f171-347b-4b0e-b0d0-21b2687e5524",
+            "colId": "fdd39ba1-3674-4b7a-9bac-ff21a535b22b",
+            "containerId": "",
+            "name": "authenticate",
+            "url": "{{urlBase}}/user/authenticate",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-07-15T01:15:16.171Z",
+            "modified": "2023-07-15T01:16:14.067Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"agaklik@fema.com.br\",\n  \"password\":\"6666\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
